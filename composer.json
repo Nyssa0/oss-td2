@@ -1,0 +1,28 @@
+{
+    "name": "nyssa/oss-td2",
+    "description": "This is a desciption",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nyssa\\OssTd2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hassina",
+            "email": "hassinaayachi@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "phpstan": "@php vendor/bin/phpstan analyse src --level=max",
+        "test": "@php vendor/bin/phpunit tests"
+    }
+}
